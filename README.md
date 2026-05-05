@@ -107,3 +107,32 @@ git add .
 git commit -m "eksamen"
 git push
 git status
+
+
+
+
+
+
+
+
+
+INSERT INTO brukere (username, password) VALUES ('test', '1234');
+Legger inn en ny bruker i tabellen. Du sier hvilke felt og hvilke verdier.
+SELECT * FROM brukere;
+Henter og viser alle brukere i tabellen. * betyr "alt".
+CREATE DATABASE eksamen_db;
+Lager en ny tom database.
+USE eksamen_db;
+Sier at du vil jobbe med denne databasen.
+CREATE TABLE brukere (...);
+Lager en tabell med kolonner, akkurat som Excel med overskrifter.
+SHOW DATABASES;
+Viser alle databaser som finnes.
+SHOW TABLES;
+Viser alle tabeller i databasen du bruker.
+GRANT ALL PRIVILEGES ON eksamen_db.* TO 'abdi'@'%';
+Gir brukeren abdi tilgang til databasen fra alle IP-adresser.
+FLUSH PRIVILEGES;
+Oppdaterer rettighetene så endringene gjelder med en gang.
+SELECT user, host FROM mysql.user;
+Viser alle databasebrukere og hvilken IP de kan logge inn fra.
