@@ -64,3 +64,46 @@ git init
 git add .
 git commit -m "update"
 git push
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ls          # viser filer i mappen
+cd mappenavn    # går inn i mappe
+cd ..       # går tilbake
+mkdir navn  # lager ny mappe
+pwd         # viser hvor du er
+Server
+ssh abdi@10.2.2.93          # logger inn på server
+systemctl status mariadb    # sjekker at database kjører
+sudo ufw status             # sjekker porter
+sudo systemctl restart mariadb  # restarter database
+MariaDB
+mariadb -u abdi -p          # logger inn i database
+SHOW DATABASES;
+CREATE DATABASE eksamen_db;
+USE eksamen_db;
+SHOW TABLES;
+SELECT * FROM brukere;
+INSERT INTO brukere (username, password) VALUES ('test', '1234');
+SELECT user, host FROM mysql.user;
+GRANT ALL PRIVILEGES ON eksamen_db.* TO 'abdi'@'%';
+FLUSH PRIVILEGES;
+EXIT;
+Flask
+python app.py               # starter Flask
+Git
+git add .
+git commit -m "eksamen"
+git push
+git status
